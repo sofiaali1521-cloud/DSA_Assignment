@@ -31,7 +31,15 @@ head = temp;
 
 
 
-
+// delete from starting
+void deleteFront(Node*& head)
+{
+if(head == NULL)
+return;
+Node* temp = head;
+head = head->next;
+delete temp;
+}
 
 int main()
 {
@@ -54,15 +62,7 @@ int main()
 }
 
 
-// delete from starting
-void deleteFront(Node*& head)
-{
-if(head == NULL)
-return;
-Node* temp = head;
-head = head->next;
-delete temp;
-}
+
 
 
 
