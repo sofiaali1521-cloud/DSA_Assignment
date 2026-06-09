@@ -21,6 +21,17 @@ return count;
 }
 
 
+// insert at begin
+void insertFront(Node*& head,int x)
+{
+Node* temp = new Node ();
+temp->next = head;
+head = temp;
+}
+
+
+
+
 
 int main()
 {
@@ -52,3 +63,6 @@ Node* temp = head;
 head = head->next;
 delete temp;
 }
+
+
+
